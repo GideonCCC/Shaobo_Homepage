@@ -248,6 +248,18 @@ section[id] {
   box-shadow: 0 0 0 0.2rem rgba(var(--bs-primary-rgb), 0.25);
 }
 
+.edu-item .details,
+.exp-item .details {
+  display: none;
+}
+
+.edu-item:hover .details,
+.exp-item:hover .details,
+.edu-item.show-details .details,
+.exp-item.show-details .details {
+  display: block;
+}
+
 /* ---------- Projects (cards + pastel badges) ---------- */
 #projects .project-card {
   transition:
